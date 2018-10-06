@@ -1,0 +1,55 @@
+/*
+Creater: Shiwei Wang
+Date Created: 10/5/18
+Date Last Modified:
+*/
+
+body {
+	background-color: #fef9ff;
+	font-family: arial, helvetica, sans-serif;
+	color: #0d1f2d;
+	max-width: 900px; /*when you use max-width, you are telling browser to not exceed that width*/
+	margin: 0 auto;
+}
+/* we are using padding and font size to center vertically. not perfectly vertical though*/
+header, footer {
+	background-color: #5b7d87;
+	color: #fef9ff;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+/* we may want to add text to header later so this is while we create a new rule*/
+h1 {
+	font-size: 2.5em;
+}
+nav {
+	border-top: 3px dashed #546a7b;
+	border-bottom: 3px dashed #546a7b;
+	margin-top: 4px;
+}
+div {
+		clear:both;
+		}
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+nav a:hover {
+    background-color: #fef9ff;
+    color: #5b7d87; 
+}
+nav a:active {
+    font-weight: bold;
+}
+nav a:visited {
+    color: #e4c3ad; 
+}

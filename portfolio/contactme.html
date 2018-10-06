@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Name: Shiwei Wang
+Date Created: 10/2/2018
+Most recent revision:
+-->
+
+<html lang="en">
+	<head>
+		<title>Contact</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="styles/forms.css" rel="stylesheet" type="text/css" />
+		<div class="clear-float"></div>
+	</head>
+	<header>
+	<h1>Contact Me</h1>
+	</header>
+	<hr />
+	<a href="index.html">Home</a>
+	<hr />
+	
+	<body>
+		<h2>Information Request</h2>
+			<form action="submit.html" method="POST">
+			<label for="myFirstName">First Name:</label> <br /><input type="text" name="myFirstName" required/><br /><br />
+			<label for="myLasttName">Last Name:</label> <br /><input type="text" name="myLastName" required/><br /><br />
+			<label for="myNumber">Phone Number:</label> <br /><input type="text" name="myNumber" required/><br /><br />
+			
+			<label for="contact">Best time to call:</label> <br />
+			<select id="contact" name="timeofday">
+				<option value="default" selected>--Select One--</option>
+				<option value="morning">Morning (8AM to 12PM Eastern)</option>
+				<option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+				<option value="evening">Evening (5PM to 8PM Eastern)</option><br />
+			</select><br /><br />
+			
+			<fieldset>
+			<legend>I am interested in (check all that apply)</legend>
+			<input type="checkbox" name="myChoices" value="Front" />Front-End Web Development<br />
+			<input type="checkbox" name="myChoices" value="Back" />Back-End Web Development<br />
+			<input type="checkbox" name="myChoices" value="Data" />Database Design<br />
+			</fieldset>
+			
+			<fieldset>
+			<legend>I have filled in the client Questionaire form:</legend>
+			<input type="radio" name="answer" value="YES" checked />Yes<br />
+			<input type="radio" name="answer" value="No" />No<br />
+			</fieldset>
+			
+			Additional information: <br />
+			<textarea name="addinfo"></textarea><br /><br />
+			
+			<input type="Submit" name="submit" value="Submit"/><br />
+		</form
+
+	</body>
+	<hr />
+	<footer>
+	</footer>
+</html>
