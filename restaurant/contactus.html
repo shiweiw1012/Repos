@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+	Name: Shiwei Wang
+	Date Created: 10/3/2018
+	Most recent revision: 
+-->
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+	</head>
+	<body>
+	<main>
+		<header>
+		<h1 style="text-align:center">Kobe Japanese Steakhouse</h1>
+		</header>
+		
+		<nav>
+		<hr />
+		<p><a href="home.html">Home</a>&emsp;<a href="menu.html">Menu</a>&emsp;<a href="contactus.html">Contact Us</a></p>
+		<hr />
+		
+	<form action="sendrequest.html" method="POST" style="text-align:center">
+		<label for="myName">Name:&emsp;</label><input type="text" name="myName" required/><br /><br />
+		<label for="myEmail">Email:&emsp;</label><input type="text" name="myEmail" required/><br /><br />
+		<label for="myNum">Phone:&emsp;</label><input type="text" name="myNum" required/><br /><br />
+		
+		
+		<label for="inquiry">Reason for Inquiry:</label>
+			<select id="inquiry" name="reason">
+				<option value="default" selected>Catering</option>
+				<option value="privatep">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option><br />
+			</select><br /><br />
+
+		Additional information: 
+		<textarea name="addinfo"></textarea><br /><br />
+		
+		Have you been to the restaurant?
+			<input type="radio" name="answer" value="No" checked />No&emsp;
+			<input type="radio" name="answer" value="Yes" />Yes<br /><br />
+		
+		
+		Best days to contact you:
+			<input type="checkbox" name="days" value="M" />M&emsp;
+			<input type="checkbox" name="days" value="T" />T&emsp;
+			<input type="checkbox" name="days" value="W" />W&emsp;
+			<input type="checkbox" name="days" value="Th" />Th&emsp;
+			<input type="checkbox" name="days" value="F" />F&emsp;
+			<br /><br />
+			
+		<input type="submit" name="sendrequest" value="Send Request" /><br /></br />
+		
+	</form>
+		<hr />
+		<footer style="text-align:center">30 Plantation Park Drive, Bluffton, SC 29910<br /><br />
+		(843)-757-1234
+		</footer>
+	</main>
+	</body>
+</html>
