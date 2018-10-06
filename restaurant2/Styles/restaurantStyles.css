@@ -4,3 +4,13 @@ Date Created: 10/6/18
 Recent Revision:
 */
 
+header, footer {
+	background-color: #5b7d87;
+	color: #fef9ff;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+h1 {
+	font-family: 'Mali', cursive;
+}
