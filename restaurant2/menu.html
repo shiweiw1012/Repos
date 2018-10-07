@@ -16,7 +16,33 @@
 	body {
 		background-color: lavender;
 		}
-	
+	nav a:visited {
+		color: #e4c3ad;
+		}
+	nav a:hover {
+		font-weight: bold;
+		}
+	nav a:active {
+		text-decoration: none;
+		}
+	#table2 {
+	border: 2px solid black;
+	width: 50%;
+	height: 250px;
+	border-collapse: collapse;
+	}
+	#table2 th {
+		font-size: 20px;
+		text-align: left;
+		background-color: lavender;
+		padding: 10px 0px 10px 0px;
+		}
+	#table2 tbody tr:nth-child(even) {
+		background-color: lavender;
+	}
+	#table2 tbody tr:nth-child(odd) {
+		background-color: white;
+	}
 	</style>
 	</head>
 	<body>
@@ -63,6 +89,32 @@
 				<td>$23.95</td>
 				<td>$25.95</td>
 			</tr>
+		</table>
+		<br />
+		<br />
+		<table id="table2">
+		<thead>
+				<th>Beverages</th>
+				<th></th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Root Beer</td>
+				<td>$3.00</td>
+			</tr>
+			<tr>
+				<td>Bottled Water</td>
+				<td>$1.25</td>
+			</tr>
+			<tr>
+				<td>Lemonade</td>
+				<td>$1.00</td>
+			</tr>
+			<tr>
+				<td>Ice Tea</td>
+				<td>$1.25</td>
+			</tr>
+		</tbody>
 		</table>
 		<br />
 		
