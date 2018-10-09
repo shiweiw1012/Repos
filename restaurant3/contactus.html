@@ -10,6 +10,7 @@
 		<title>Contact Us</title>
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 	label {
 		font-weight: bold;
@@ -30,7 +31,6 @@
 	nav a:active {
 		text-decoration: none;
 		}
-		
 	</style>
 	</head>
 	<body>
@@ -41,42 +41,91 @@
 		
 		<nav>
 		<hr />
-		<p><a class="btn badge-pill" href="home.html">Home</a>&emsp;<a class="btn badge-pill" href="menu.html">Menu</a>&emsp;<a class="btn badge-pill" href="contactus.html">Contact Us</a></p>
+		<p><a class="btn badge-pill" href="home.html"><i class="fa fa-home"></i></a>&emsp;<a class="btn badge-pill" href="menu.html">Menu</a>&emsp;<a class="btn badge-pill" href="contactus.html">Contact Us</a></p>
 		<hr />
 		
-	<form action="sendrequest.html" method="POST" style="text-align:center">
-		<label for="myName">Name:&emsp;</label><input type="text" name="myName" required/><br /><br />
-		<label for="myEmail">Email:&emsp;</label><input type="text" name="myEmail" required/><br /><br />
-		<label for="myNum">Phone:&emsp;</label><input type="text" name="myNum" required/><br /><br />
+	<form class="needs-validation" method="POST" style="text-align:center" novalidate>
+	<div class="form-group">
+		<div class="col-auto">
+		<label for="validationCustom01">Name:&emsp;</label><input type="text" class="form-control" id="validationCustom01" name="myName" required/>
+		<div class="valid-feedback">
+		Looks good!
+		</div>
+		</div><br /><br />
+		<div class="col-auto">
+		<label for="validationEmail">Email:&emsp;</label><input type="text" class="form-control" id="validationEmail" name="myEmail" required/>
+		<div class="valid-feedback">
+		Looks Good!
+		</div>
+		</div><br /><br />
+		<div class="col-auto">
+		<label for="validationPhone">Phone:&emsp;</label><input type="text" class="form-control" id="validationNumber" name="myNum" required/>
+		<div class="valid-feedback">
+		Looks good!
+		</div>
+		</div><br /><br />
 		
-		
+		<div class="form-group">
+		<div class="col-auto">
 		<label for="inquiry">Reason for Inquiry:</label>
-			<select id="inquiry" name="reason">
+			<select id="inquiry" class="form-control" name="reason">
 				<option value="default" selected>Catering</option>
 				<option value="privatep">Private Party</option>
 				<option value="feedback">Feedback</option>
 				<option value="other">Other</option><br />
-			</select><br /><br />
+			</select>
+		<div></div>
+		<br /><br />
 
+		<div class="form-group">
+		<div class="col-auto">
 		Additional information: 
-		<textarea name="addinfo"></textarea><br /><br />
+		<textarea name="addinfo" class="form-control"></textarea>
+		</div></div>
+		<br /><br />
 		
+		<div class="form-check">
+		<div class="col-auto">
 		Have you been to the restaurant?
 			<input type="radio" name="answer" value="No" checked />No&emsp;
-			<input type="radio" name="answer" value="Yes" />Yes<br /><br />
+			<input type="radio" name="answer" value="Yes" />Yes
+		</div></div>
+		<br /><br />
 		
-		
+		<div class="form-check">
+		<div class="col-auto">
 		Best days to contact you:
 			<input type="checkbox" name="days" value="M" />M&emsp;
 			<input type="checkbox" name="days" value="T" />T&emsp;
 			<input type="checkbox" name="days" value="W" />W&emsp;
 			<input type="checkbox" name="days" value="Th" />Th&emsp;
 			<input type="checkbox" name="days" value="F" />F&emsp;
+			</div></div>
 			<br /><br />
 			
-		<input type="submit" name="sendrequest" value="Send Request" /><br /></br />
+		<input type="submit" class="btn btn-primary" name="sendrequest" value="Send Request" /><br /></br />
 		
 	</form>
+	<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 		<hr />
 		<footer>30 Plantation Park Drive, Bluffton, SC 29910<br /><br />
 		(843)-757-1234
