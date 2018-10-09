@@ -33,6 +33,33 @@ Most recent revision:
 				<button onclick="luckySevens()" type="submit" id="submitButton" class="btn btn-primary">Play</button>
 
 		</form>
+		<table id="results" class="table table-striped" style="display:none;">
+			<thead>
+				<tr>
+					<th colspan="2">Result</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Starting Bet</td>
+					<td><span id="startResults"></span></td>
+				</tr>
+				<tr>
+					<td>Total Rolls Before Going Broke</td>
+					<td><span id="trResults"></span></td>
+				</tr>
+				<tr>
+					<td>Highest Amount Won</td>
+					<td><span id="highResults"></span></td>
+				</tr>
+				<tr>
+					<td>Roll Count at Highest Amount Won</td>
+					<td><span id="rcResults"></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
 
 		<!-- required script for bootstrap-->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
