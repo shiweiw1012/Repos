@@ -43,7 +43,15 @@ function luckySevens() {
 		maxRolls = moneyArray.indexOf(maxMoney);
   
 	if (maxRolls < 1) {
-    maxRolls = 0;
+		maxRolls = 0;
 	}
 	
+	document.getElementById("results").style.display = "inline";
+	document.getElementById("startResults").innerText = "$"+startingBet+ ".00";
+	document.getElementById("trResults").innerText = totalRoll;
+	document.getElementById("highResults").innerText = "$"+maxMoney+ ".00";
+	document.getElementById("rcResults").innerText = maxRolls;
+	document.getElementById("submitButton").innerHTML = "Play Again";
+	return false;
+
 }
