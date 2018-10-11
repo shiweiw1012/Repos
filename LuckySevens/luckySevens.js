@@ -35,5 +35,15 @@ function luckySevens() {
 		var newMoney = oldMoney - 1; // updates amount of money user has
 		moneyArray.push(newMoney); // add updated amount to end of array
     }
+    totalRoll = totalRoll++
+  }
 
+		// getting max amount of money and max amount of rolls from array
+		maxMoney = Math.max(...moneyArray);
+		maxRolls = moneyArray.indexOf(maxMoney);
+  
+	if (maxRolls < 1) {
+    maxRolls = 0;
+	}
+	
 }
