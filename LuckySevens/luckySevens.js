@@ -6,3 +6,9 @@ function luckySevens() {
   var loseCounter = 0;
   var gameMoney = startingBet;
   var moneyArray = [startingBet];
+
+  if (startingBet <= 0) {
+    alert("Starting bet must be greater than 0");
+	document.forms["luckySevens"]["startingBet"].value = "";
+    return false;
+}
